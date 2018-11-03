@@ -11,6 +11,10 @@ class TestBasics(unittest.TestCase):
 		result = rpn.calculate('4 3 -')
 		self.assertEqual(1,result)
 	
+	def test_exp(self):
+		result = rpn.calculate('3 5 ^')
+		self.assertEqual(243,result)
+	
 	def test_toomany(self):
 		with self.assertRaises(ValueError):
 			result = rpn.calculate('1 2 3 +')
