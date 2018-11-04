@@ -1,9 +1,11 @@
 language: python
 rvm:
   - "3.5"
-install:
+before_install:
   - pip install codecov
+  - pip install coverage
 # command to run tests
-script: make test
+script: 
+  - coverage run test_rpn.py
 after_success:
   - codecov
