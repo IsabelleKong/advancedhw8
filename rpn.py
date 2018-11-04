@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from termcolor import colored
+from colorama import Fore, Back, Style 
 
 def calculate(arg):
 	stack = []
@@ -31,7 +31,7 @@ def main():
 	while True:
 		try:
 			result = calculate(input('rpn calc> '))
-			print(colored(result, 'red'))
+			print(Fore.RED + result)
 		except ValueError:
 			pass
 
