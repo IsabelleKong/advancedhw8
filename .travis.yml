@@ -6,6 +6,6 @@ before_install:
   - pip install coverage
 # command to run tests
 script: 
-  - coverage run python3 -m unittestt
+  - coverage run test_rpn.py
 after_success:
   - codecov

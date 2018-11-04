@@ -19,4 +19,5 @@ class TestBasics(unittest.TestCase):
 		with self.assertRaises(ValueError):
 			result = rpn.calculate('1 2 3 +')
 
-
+if __name__ == '__main__':
+    unittest.main()
