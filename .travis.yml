@@ -1,9 +1,0 @@
-language: python
-rvm:
-  - "3.5"
-install:
-  - pip install --user codecov
-# command to run tests
-script: make test
-after_success:
-  - codecov
