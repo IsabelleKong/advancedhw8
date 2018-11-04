@@ -2,6 +2,7 @@ language: python
 rvm:
   - "3.5"
 before_install:
+  - pip install colorama
   - pip install codecov
   - pip install coverage
 # command to run tests
