@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from termcolor import colored
 
 def calculate(arg):
 	stack = []
@@ -30,7 +31,7 @@ def main():
 	while True:
 		try:
 			result = calculate(input('rpn calc> '))
-			print(result)
+			print(colored(result, 'red'))
 		except ValueError:
 			pass
 
