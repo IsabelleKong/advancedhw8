@@ -31,7 +31,7 @@ def main():
 	while True:
 		try:
 			result = calculate(input('rpn calc> '))
-			print(Fore.RED + result)
+			print(Fore.RED + str(result))
 		except ValueError:
 			pass
 
